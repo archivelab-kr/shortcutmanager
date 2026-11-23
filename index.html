@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ShortcutManager</title>
+<meta name="description" content="ShortcutManager is a pie menu for your Mac: press Command twice and one of Q W E R A S D F opens your app, folder or file. One hand, two beats.">
+<link rel="alternate" hreflang="en" href="https://archivelab-kr.github.io/shortcutmanager/en/">
+<link rel="alternate" hreflang="ko" href="https://archivelab-kr.github.io/shortcutmanager/ko/">
+<link rel="alternate" hreflang="x-default" href="https://archivelab-kr.github.io/shortcutmanager/">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<script>
+(function () {
+  var prefs = navigator.languages || [navigator.language || "en"], pick = "en";
+  for (var i = 0; i < prefs.length; i++) { if (prefs[i].toLowerCase().indexOf("ko") === 0) { pick = "ko"; break; } if (prefs[i].toLowerCase().indexOf("en") === 0) break; }
+  location.replace(pick + "/");
+})();
+</script>
+</head>
+<body><p><a href="en/">English</a> · <a href="ko/">한국어</a></p></body>
+</html>
