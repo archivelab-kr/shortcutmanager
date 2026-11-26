@@ -185,7 +185,8 @@ def home(lang):
 <section><h2>{e(t["shortcut"])}</h2><p>{e(t["shortcut_text"])}</p>{video(lang, "shortcut", t["shortcut"])}</section>
 <section class="cards"><div><h2>{e(t["price"])}</h2><ul>{prices}</ul></div>
   <div><h2>{e(t["private"])}</h2><p>{e(t["private_text"])}</p><p><a href="privacy.html">{e(t["private_link"])}</a></p></div></section>
-<section class="hero"><p><a class="button" href="{STORE}">{e(t["download"])}</a></p></section>"""
+<section class="hero"><p><a class="button" href="{STORE}">{e(t["download"])}</a></p>
+  <p><a href="https://macpip.com/apps/shortcutmanager?ref=badge"><img src="https://macpip.com/badge/shortcutmanager.svg" height="58" alt="Listed on MacPip"></a></p></section>"""
     return page(lang, "index", f'ShortcutManager: {t["tagline"]}', t["description"], body)
 
 
